@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Typography, Divider } from "@material-ui/core";
+import { timeSince } from "../../common/Utils";
 
 const View = props => {
   return (
@@ -9,12 +10,16 @@ const View = props => {
           <div className="boxTitle">
             <img src={tile.image} alt={tile.name} />
             <div className="boxTitleOverLay">
-              <Typography component="div" variant="subtitle1">
-                {tile.name}
-              </Typography>
-              <Typography component="div" variant="body2" color="secondary">
-                <span>Id: {tile.id} - created </span>
-              </Typography>
+              <div className="pad5">
+                <Typography component="div" variant="subtitle1">
+                  {tile.name}
+                </Typography>
+                <Typography component="div" variant="body2" color="secondary">
+                  <span>
+                    Id: {tile.id} - created {timeSince(tile.created)}
+                  </span>
+                </Typography>
+              </div>
             </div>
           </div>
           <div className="pad10">

@@ -34,9 +34,9 @@ class SearchSort extends React.Component {
     return (
       <div>
         <Grid container>
-          <Grid item xs={6} sm={6} md={6} lg={6}>
-            <Grid container>
-              <Grid item xs={4} sm={4} md={4} lg={4}>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Grid container className="margb5">
+              <Grid item xs={8} sm={8} md={6} lg={6}>
                 <TextField
                   required
                   fullWidth
@@ -58,7 +58,7 @@ class SearchSort extends React.Component {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6} sm={6} md={6} lg={6}>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
             <FormControl
               variant="outlined"
               style={{

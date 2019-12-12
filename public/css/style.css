@@ -95,7 +95,7 @@ body {
 }
 
 .margb5 {
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .margb10 {
@@ -137,9 +137,11 @@ body {
 .vscroll {
   overflow-y: scroll;
 }
+
 .wordbreak {
   word-break: break-word;
 }
+
 /*************/
 .box {
   background: #313131;
@@ -165,8 +167,7 @@ body {
   position: absolute;
   bottom: 4px;
   background: #000000b0;
-  width: 94.7%;
-  padding: 7px;
+  width: 100%;
 }
 
 .divider {
@@ -174,4 +175,10 @@ body {
   border-bottom: 0.4px dotted #cbcbcb;
   background: none !important;
   height: 0.4px !important;
+}
+
+.filterBox {
+  border: 1px solid #cbcbcb;
+  padding: 5px;
+  margin-bottom: 10px;
 }
